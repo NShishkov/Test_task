@@ -1,0 +1,68 @@
+.bags
+	margin: auto
+	margin-top: -20px
+	box-shadow: -1px 5px 48px 3px rgba(237, 235, 253, 0.75)
+	background-color: #ffffff
+	width: 1380px
+	z-index: 2
+	background: white url(../img/bags/bags-bg.png) no-repeat center
+	background-size: cover
+	&-block
+		position: relative
+		margin-bottom: 60px
+		padding-top: 40px
+		width: 352px
+		height: 452px
+		text-align: center
+		transition: .3s
+		&:hover
+			box-shadow: -1px 5px 48px 3px rgba(221, 223, 224, 0.75)
+			background-color: #ffffff
+			.bags-block
+				&__btn, &__likes, &__comments
+					transition: .3s
+					opacity: 1
+				&__price
+					color: $active-color
+		&__img
+			height: 260px
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-bottom: 26px
+		&__name
+			margin-bottom: 16px
+			color: #777777
+			font-family: $OpenSans
+			font-size: 18px
+			font-weight: 400
+			line-height: 25px
+		&__price
+			color: #333333
+			font-family: $OpenSansSemiBold
+			font-size: 25px
+			font-weight: 400
+			line-height: 25px
+		&__btn
+			position: absolute
+			bottom: -30px
+			left: 50%
+			margin-left: -101px
+			transition: .3s
+			opacity: 0
+		&__likes
+			position: absolute
+			top: 22px
+			left: 20px
+		&__comments
+			position: absolute
+			top: 22px
+			right: 20px
+		&__likes, &__comments
+			color: #bbbbbb
+			opacity: 0
+			transition: .3s
+			font-family: $OpenSans
+			font-size: 14px
+			font-weight: 400
+			line-height: 25px

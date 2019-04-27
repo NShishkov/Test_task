@@ -1,0 +1,98 @@
+.showcase
+	position: relative
+	z-index: 2
+	width: 1380px
+	margin: auto
+	margin-bottom: -75px
+	box-shadow: -1px 5px 48px 3px rgba(237, 235, 253, 0.75)
+	background: white url(../img/watches/watches-bg.png) center repeat
+	background-size: cover
+	&__tabs
+		padding: 0
+		display: flex
+		justify-content: space-around
+		box-shadow: -1px 5px 48px 3px rgba(239, 239, 240, 0.75)
+		background-color: #ffffff
+		height: 66px
+		width: 1105px
+		border-radius: 30px
+		margin: auto
+		li
+			padding: 0
+			margin: 0
+			display: inline-block
+			a
+				color: #333333
+				font-family: $OpenSansSemiBold
+				font-size: 20px
+				font-weight: 400
+				transition: .25s
+				&:hover
+					text-decoration: none
+					color: $active-color
+					font-weight: 400
+					text-shadow: -2px 9px 5px rgba(213, 200, 247, 0.75)
+				&.active
+					color: $active-color
+					font-weight: 400
+					text-shadow: -2px 9px 5px rgba(213, 200, 247, 0.75)
+	&__content
+		margin-top: 44px				
+	
+	.watches-block
+		position: relative
+		margin-bottom: 60px
+		width: 352px
+		height: 452px
+		text-align: center
+		transition: .3s
+		&:hover
+			box-shadow: -1px 5px 48px 3px rgba(202, 236, 247, 0.75)
+			background-color: #ffffff
+			.watches-block
+				&__btn, &__likes, &__msg
+					transition: .3s
+					opacity: 1
+				&__price
+					color: $active-color
+		&__img
+			height: 260px
+			margin-bottom: 26px
+			padding-top: 40px
+		&__name
+			margin-bottom: 16px
+			color: #777777
+			font-family: $OpenSans
+			font-size: 18px
+			font-weight: 400
+			line-height: 25px
+		&__price
+			color: #333333
+			font-family: $OpenSansSemiBold
+			font-size: 25px
+			font-weight: 400
+			line-height: 25px
+		&__btn
+			position: absolute
+			bottom: -30px
+			left: 50%
+			margin-left: -101px
+			transition: .3s
+			opacity: 0
+		&__likes
+			position: absolute
+			top: 22px
+			left: 20px
+		&__msg
+			position: absolute
+			top: 22px
+			right: 20px
+		&__likes, &__msg
+			color: #bbbbbb
+			opacity: 0
+			transition: .3s
+			font-family: $OpenSans
+			font-size: 14px
+			font-weight: 400
+			line-height: 25px
+

@@ -1,0 +1,171 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.header
+		&__logo
+			margin-top: 40px
+		&-text
+			margin-top: 0
+			&__title
+				font-size: 82px
+				line-height: 100px
+		&-form
+			float: right
+
+	.bags
+		width: auto
+		&-block
+			width: auto
+
+	.showcase
+		width: auto
+		&__tabs
+			width: auto
+		.watches-block
+			width: auto
+
+// ≥992px
++media-breakpoint-down(md)
+	.section
+		&__title
+			padding-top: 65px
+			margin-bottom: 40px
+
+	.header
+		&-text__title
+			line-height: 60px
+			font-size: 60px
+
+	.brands
+		&__title
+			text-align: center
+			margin-top: 0
+		&__img
+			img
+				margin: auto
+
+	.showcase
+		&__tabs
+			width: 95%
+	.newsletter
+		&::before
+			font-size: 100px
+			line-height: 150px
+		&__input-wrap
+			width: 95%
+// ≥768px
++media-breakpoint-down(sm)
+	.header
+		z-index: 10
+		position: relative
+		background: $active-color url(../img/header/header-bg-mobile.jpg) center no-repeat
+		background-size: cover
+		&::before
+			z-index: -1	
+			position: absolute
+			top: 0
+			left: 0
+			height: 100%
+			width: 100%
+			content: ''
+			background-color: rgba($active-color, .8)
+		&__logo
+			text-align: center
+		&-form
+			margin: auto
+			margin-top: 35px
+			float: none
+		&-text
+			text-align: center
+			&__title
+				line-height: 80px
+				font-size: 80px
+			&__btn
+				margin: auto
+				margin-top: 40px
+
+	.newsletter
+		&::before
+			font-size: 80px
+// ≥576px
++media-breakpoint-down(xs)
+	.section__title
+		font-size: 38px
+
+	.scrollup
+		right: 15px
+		bottom: 15px
+
+	.header
+		&-form
+			width: 100%
+			&__input
+				width: 100%
+				padding-left: 40px
+				padding-right: 120px
+			&__select
+				right: 10px
+			&__button
+				i
+					left: 10px
+		&-text
+			&__title
+				line-height: 50px
+				font-size: 50px
+			&__subtitle
+				font-size: 40px
+				line-height: 40px
+
+	.showcase
+		&__tabs
+			padding: 5px 15px
+			flex-direction: column
+			height: auto
+		.watches-block
+			margin-bottom: 35px 
+
+	.newsletter
+		padding-top: 80px
+		&::before
+			font-size: 40px
+			line-height: 100px
+		&__btn
+			position: relative
+			display: block
+			margin: auto
+			background-color: #fff
+			margin-top: 15px
+			color: #000
+
+	.bottom-navs
+		&__menu
+			width: 100%
+			ul
+				text-align: center
+				padding: 0px 10px
+				flex-wrap: wrap
+				align-items: center
+				align-content: center
+			li
+				flex-basis: 33%
+
+	footer
+		font-size: 14px
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
